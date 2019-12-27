@@ -1,0 +1,58 @@
+{
+    "name": "bmatovu/laravel-api-filters",
+    "description": "Laravel API filters.",
+    "homepage": "https://github.com/mtvbrianking/laravel-api-filters",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "laravel",
+        "package",
+        "api",
+        "query",
+        "filters",
+        "datatables"
+    ],
+    "authors": [
+        {
+            "name": "Brian Matovu",
+            "email": "mtvbrianking@gmail.com",
+            "homepage": "http://bmatovu.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.2"
+    },
+    "require-dev": {
+        "mockery/mockery": "^1.2.3",
+        "orchestra/testbench": "^4.0",
+        "phpunit/phpunit": "^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Bmatovu\\ApiFilters\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Bmatovu\\ApiFilters\\Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "scripts": {
+        "doc": "php sami.phar update .sami.dist",
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Bmatovu\\ApiFilters\\ApiFiltersServiceProvider"
+            ]
+        }
+    }
+}
